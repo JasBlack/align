@@ -234,7 +234,7 @@ Gotchas:
   - theme key `align-ui` (falls back to crt-align-ui / crt-match-ui); stack settings in
     `align-stack-v1`.
   - icons: favicon.svg (two offset frames green/violet + crosshair on a dark tile),
-    PNGs 32/180/192/512, site.webmanifest, og.jpg 1200x630 from a real stack (chicago).
+    PNGs 32/180/192/512, site.webmanifest, og.jpg 1200x630 (the jas.black tool card: icon, title, line and the difference view of a dusk mountain).
   Open against the kit: mediabunny still loads from jsDelivr at runtime (kit says vendor
   essentials); red is used for failed matches and error toasts (kit: rec/danger only).
   SnipSnap pieces kept: round play key, inset timeline, uppercase progress overlay,
