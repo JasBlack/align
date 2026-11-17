@@ -221,13 +221,17 @@ Gotchas:
     the title. Status LEDs (`aligned · busy`) sit after the crt|stack switch.
   - tab title / og:title / twitter:title / manifest = `Align - JAS.BLACK`;
     og:site_name JAS.BLACK; canonical align.jas.black (CNAME at the root + web/CNAME).
-  - `web/family.js` is the family file verbatim: slider fill, **right-click resets any
-    slider** to its load value, hover version, segmented switches. Footers say
-    "right-click a slider resets it".
-  - tokens: green #39ff88, violet #b36bff exactly; muted #929399 / light #686864;
-    slider readouts violet (`--value`); 12 px knobs; 18 px step badges.
-  - dot grid = the family's baked PNG tile on the body (`--dotgrid`), never a CSS
-    gradient; the stage is a #0b0b0c well in **both** themes (`--stage`; the CRT shader
+  - `web/family.js` is the family file: slider fill, **right-click resets any setting**
+    to its load value (sliders, the view `.seg`s, every chip row where one is pressed,
+    toggle keys such as mesh grid / follow camera; it clicks the default button, so the
+    app updates; action keys keep the browser menu), hover version, segmented switches.
+    The key-hint bar (`.keys`, the family reference) ends with "right-click a setting
+    resets it"; combinations are written `ctrl`+`Z`; hidden on touch-only phones.
+  - tokens: green #39ff88, purple #8b6cff exactly in both themes (the family's one
+    purple, Nov 2026); muted #929399 / light #686864; slider readouts purple
+    (`--value`); 12 px knobs. No step numbers on the panel titles: Align has no easy mode.
+  - dot grid = the family's baked PNG tile on the body (`--dotgrid`, option B: a 32 px
+    tile drawn at 16 px, fine and faint, dark and light tiles), never a CSS gradient; the stage is a #0b0b0c well in **both** themes (`--stage`; the CRT shader
     gets it as bg with dots off; stack crop-dim is always dark).
   - stack mode is a console layout: steps left (photos, anchor, align), stage + film
     strip, console right (crop, export, 282 px); under 860 px stage first.

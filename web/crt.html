@@ -32,7 +32,7 @@
 <link rel="stylesheet" href="app.css">
 <link rel="stylesheet" href="stack.css">
 </head>
-<body data-ui="dark" data-tool="align" data-version="0.2.0">
+<body data-ui="dark" data-tool="align" data-version="0.2.1">
 <div id="app">
 
   <header class="top">
@@ -74,7 +74,7 @@
     <aside class="col" id="steps" aria-label="Steps">
 
       <section class="panel" id="p-source">
-        <h2><i>1</i><b>source</b><span>what to match?</span></h2>
+        <h2><b>source</b><span>what to match?</span></h2>
         <div class="slots">
           <button class="slot" id="slot-orig" type="button" data-role="orig">
             <span class="slot-well"><canvas class="thumb" width="168" height="112" aria-hidden="true"></canvas></span>
@@ -110,7 +110,7 @@
       </section>
 
       <section class="panel" id="p-align">
-        <h2><i>2</i><b>align</b><span>lock it</span></h2>
+        <h2><b>align</b><span>lock it</span></h2>
         <button type="button" class="ebig" id="btn-align"><span aria-hidden="true">&#x25B6;</span> align</button>
         <div class="meterrow">
           <div class="vu" id="vu" aria-hidden="true"></div>
@@ -131,7 +131,7 @@
       </section>
 
       <section class="panel" id="p-fix">
-        <h2><i>3</i><b>fix</b><span>by hand</span></h2>
+        <h2><b>fix</b><span>by hand</span></h2>
         <div class="chips" id="tools">
           <button type="button" class="chip lp" data-tool="view" title="Pan and zoom (V)">move</button>
           <button type="button" class="chip lp" data-tool="pin" title="Puppet pins: drop and drag to warp the layer live (P)">pin</button>
@@ -156,7 +156,7 @@
       </section>
 
       <section class="panel" id="p-export">
-        <h2><i>4</i><b>export</b><span>keep it</span></h2>
+        <h2><b>export</b><span>keep it</span></h2>
         <button type="button" class="ebtn ink wide" id="btn-export">save layer</button>
         <div class="lcd mini" id="out-line">&ndash;</div>
         <div class="kgrid">
@@ -197,8 +197,8 @@
         <div class="zoom" id="zoom-val">100%</div>
       </div>
       <div class="keys" id="shortcuts">
-        <span><kbd>1</kbd>&ndash;<kbd>7</kbd> view &middot; <kbd>V</kbd><kbd>P</kbd><kbd>R</kbd> tools &middot; <kbd>F</kbd> fit &middot; <kbd>space</kbd> pan &middot; <kbd>ctrl</kbd><kbd>Z</kbd> undo &middot; <kbd>&larr;</kbd><kbd>&rarr;</kbd> frame</span>
-        <span>right-click a slider resets it</span>
+        <span><kbd>1</kbd>&ndash;<kbd>7</kbd> view &middot; <kbd>V</kbd><kbd>P</kbd><kbd>R</kbd> tools &middot; <kbd>M</kbd> grid &middot; <kbd>del</kbd> pin &middot; <kbd>F</kbd> fit &middot; <kbd>space</kbd> pan &middot; <kbd>ctrl</kbd>+<kbd>Z</kbd> undo &middot; <kbd>ctrl</kbd>+<kbd>Y</kbd> redo &middot; <kbd>&larr;</kbd><kbd>&rarr;</kbd> frame</span>
+        <span>right-click a setting resets it</span>
       </div>
     </section>
   </main>

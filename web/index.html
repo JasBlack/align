@@ -32,7 +32,7 @@
 <link rel="stylesheet" href="app.css">
 <link rel="stylesheet" href="stack.css">
 </head>
-<body data-ui="dark" class="stackmode" data-tool="align" data-version="0.2.0">
+<body data-ui="dark" class="stackmode" data-tool="align" data-version="0.2.1">
 <div id="app">
 
   <header class="top">
@@ -67,7 +67,7 @@
     <aside class="col" id="steps" aria-label="Steps">
 
       <section class="panel" id="p-photos">
-        <h2><i>1</i><b>photos</b><span>drop a set</span></h2>
+        <h2><b>photos</b><span>drop a set</span></h2>
         <button type="button" class="dropzone" id="drop">
           <span class="led" id="photos-led"></span>
           <span id="drop-label">add photos</span>
@@ -85,7 +85,7 @@
       </section>
 
       <section class="panel" id="p-anchor">
-        <h2><i>2</i><b>anchor</b><span>line up on what?</span></h2>
+        <h2><b>anchor</b><span>line up on what?</span></h2>
         <div class="chips" id="method">
           <button type="button" class="chip lp" data-method="match" title="Find the same subject in every photo by its detail: buildings, landscapes, objects">subject</button>
           <button type="button" class="chip lp" data-method="bright" title="The brightest spot in each photo: the sun, the moon, a lamp">sun / light</button>
@@ -110,7 +110,7 @@
       </section>
 
       <section class="panel" id="p-align">
-        <h2><i>3</i><b>align</b><span>lock it</span></h2>
+        <h2><b>align</b><span>lock it</span></h2>
         <button type="button" class="ebig" id="btn-align"><span aria-hidden="true">&#x25B6;</span> align all</button>
         <div class="lcd mini" id="align-line">&ndash;</div>
         <button type="button" class="emore" id="btn-reset-nudge" hidden>undo the nudge on this photo &rsaquo;</button>
@@ -144,13 +144,13 @@
         <div class="zoom" id="zoom-readout">100%</div>
       </div>
       <div class="keys" id="shortcuts">
-        <span><kbd>1</kbd>&ndash;<kbd>6</kbd> view &middot; <kbd>V</kbd><kbd>A</kbd><kbd>N</kbd><kbd>C</kbd> tools &middot; <kbd>&larr;</kbd><kbd>&rarr;</kbd> photo &middot; <kbd>alt</kbd>+<kbd>&larr;</kbd> nudge 1px &middot; <kbd>X</kbd> leave out &middot; <kbd>del</kbd> remove &middot; <kbd>space</kbd> flick &middot; <kbd>F</kbd> fit</span>
-        <span>right-click a slider resets it</span>
+        <span><kbd>1</kbd>&ndash;<kbd>6</kbd> view &middot; <kbd>V</kbd><kbd>A</kbd><kbd>N</kbd><kbd>C</kbd> tools &middot; <kbd>&larr;</kbd><kbd>&rarr;</kbd> photo &middot; <kbd>alt</kbd>+<kbd>&larr;</kbd> nudge 1px &middot; <kbd>X</kbd> leave out &middot; <kbd>del</kbd> remove &middot; <kbd>shift</kbd>+<kbd>del</kbd> clear &middot; <kbd>space</kbd> flick &middot; <kbd>F</kbd> fit</span>
+        <span>right-click a setting resets it</span>
       </div>
     </section>
     <aside class="col right" id="console" aria-label="Crop and export">
       <section class="panel" id="p-crop">
-        <h2><i>4</i><b>crop</b><span>what's left?</span></h2>
+        <h2><b>crop</b><span>what's left?</span></h2>
         <div class="aspects" id="aspects" role="list"></div>
         <div class="row-label">anchor sits</div>
         <div class="chips" id="place">
@@ -165,7 +165,7 @@
       </section>
 
       <section class="panel" id="p-export">
-        <h2><i>5</i><b>export</b><span>keep it</span></h2>
+        <h2><b>export</b><span>keep it</span></h2>
         <div class="row-label">size</div>
         <div class="chips" id="size">
           <button type="button" class="chip" data-size="native" title="Largest size with no photo upscaled">native</button>
